@@ -1,5 +1,5 @@
 ---
-collections:
+collections: []
   # - name: ansible.netcommon
   #   version: 5.1.2
   # - name: ansible.posix
@@ -11,5 +11,5 @@ collections:
 
   # - name: community.docker
   #   version: 3.4.8
-  - name: community.general
-    version: 8.1.0
+  # - name: community.general
+  #   version: 8.1.0
