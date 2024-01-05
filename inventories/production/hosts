@@ -1,4 +1,4 @@
 [all]
-target1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2001
-target1 ansible_ssh_host=127.0.0.2 ansible_ssh_port=2001
-target1 ansible_ssh_host=127.0.0.3 ansible_ssh_port=2002
+target1
+target2
+target3
