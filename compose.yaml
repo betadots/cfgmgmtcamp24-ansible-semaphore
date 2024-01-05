@@ -1,0 +1,35 @@
+---
+services:
+  semaphore:
+    restart: unless-stopped
+    image: semaphoreui/semaphore:v2.9.37
+    environment:
+      SEMAPHORE_DB_DIALECT: bolt
+      SEMAPHORE_ADMIN_PASSWORD: admin
+      SEMAPHORE_ADMIN_NAME: admin
+      SEMAPHORE_ADMIN_EMAIL: admin@localhost
+      SEMAPHORE_ADMIN: admin
+    ports:
+      - 3000:3000
+
+### demo targets
+  target1:
+    build: demo
+    ports:
+      - '2001:22'
+    container_name: target1
+    hostname: target1
+
+  target2:
+    build: demo
+    ports:
+      - '2002:22'
+    container_name: target2
+    hostname: target2
+
+  target3:
+    build: demo
+    ports:
+      - '2003:22'
+    container_name: target3
+    hostname: target3
