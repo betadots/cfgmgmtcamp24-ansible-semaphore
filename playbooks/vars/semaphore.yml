@@ -1,0 +1,4 @@
+---
+# auth
+semaphore_admin_token: ~
+semaphore_admin_password: admin

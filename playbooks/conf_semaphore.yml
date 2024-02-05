@@ -1,0 +1,8 @@
+---
+- name: Conf | Semaphore UI
+  hosts: localhost
+  gather_facts: false
+  vars_files:
+    - vars/semaphore.yml
+  roles:
+    - role: uniassist.semaphore
