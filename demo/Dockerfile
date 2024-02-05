@@ -2,7 +2,11 @@ FROM ubuntu:22.04
 LABEL maintainer="Robert Waffen <https://github.com/rwaffen>"
 
 RUN apt update && \
-    apt install -y --no-install-recommends openssh-server libssl-dev sudo && \
+    apt install -y --no-install-recommends \
+        openssh-server \
+        libssl-dev \
+        python3 \
+        sudo && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
